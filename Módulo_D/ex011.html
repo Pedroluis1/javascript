@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nacionalidade</title>
+</head>
+<body>
+    <h1>Você é Brasileiro?</h1>
+    Digite o país em que mora: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="concluir" onclick="resu()">
+    <div id="res"></div>
+    <script>
+        function resu(){
+            var txtpais = window.document.getElementById('txtpais')
+            var p = txtpais.value.toLowerCase()
+            var res = window.document.getElementById('res')
+            if(p == 'brasil'){
+                res.innerHTML =`<p>Vivendo no ${p}, você é Brasileiro(a).</p>`
+            }
+            else{
+                res.innerHTML = `<p>Vivendo na(o) ${p}, você é estrangeiro.</p>`
+            }
+        }
+    </script>
+</body>
+</html>
