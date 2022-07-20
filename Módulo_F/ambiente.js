@@ -1,4 +1,6 @@
 let num = [5,8,2]
+//num.value = `` // Limpar a caixa de texto
+//num.focus() // Como se já tivesse clicado 
 num[3] = 6
 num.sort() //ordernar crescente
 num.push(7)
