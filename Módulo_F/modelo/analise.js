@@ -47,5 +47,5 @@ function finalizar(){
                     O maior número informado foi ${ma}.<br>
                     O menor número informado foi ${me}.<br>
                     Somando todos os valores, temos ${som}.<br>
-                    A média dos valores digitados é ${(som/valores.length).toFixed(2)}.`
+                    A média dos valores digitados é ${(som/valores.length).toFixed(1)} .`
 }
