@@ -25,13 +25,15 @@ var test = 'example'
         let test = 'valor  if ';
         console.log(`Valor dentro do if "${test}"`)
     }
+    
+    if(true) {
+        let test = 'valor de outro if';
+        console.log(`valor após a execução do if`)
+    }
 
     console.log(`valor após a execução do if "${test}"`)
 })
-
-
-
-
+// mesma coisa com o const
 
 
 
