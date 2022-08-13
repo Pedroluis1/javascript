@@ -8,7 +8,7 @@ user.name = 'Outro nome 1'
 user['name'] = 'Outro nome 2'
 console.log(user)
 
-const prop = 'name'
+const prop = 'name' // criação da variavel que recebe o name
 user[prop] = 'Outro nome 3'
 console.log(user)
 
