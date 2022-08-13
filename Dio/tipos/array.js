@@ -24,34 +24,37 @@ const persons = [
 ]
 
 // Retornar a quantidade de itens de um array
-console.log('items:', persons.length)
+console.log('items:', persons.length) // Retornar a quantidade de itens 
 
 // Verificar se é array
-console.log('A variável persons é um array:', Array.isArray(persons))
+console.log('A variável persons é um array:', Array.isArray(persons)) // Confirmação se e array
 
 // Iterar os itens do array
-persons.forEach(persons => {
-    console.log(`Nome: ${persons.name}`)
+persons.forEach((persons, index, arr) =>/*arrow function*/ { // forEach : pra cada item executa uma função
+    console.log(`Nome: ${persons.name}`, `index: ${index}`, arr /*Mostrar todo o array*/)
 })
+
 
 // Filtrar array
 const mens = persons.filter(persons => persons.gender === gender.MAN)
 console.log('\nNova lista apenas com homens:', mens)
 
 // Retornar um novo 
-const personsWithCourse = persons.map(persons => {
+const personsWithCourse = persons.map(persons => { // criando um novo e mexendo
     person.course = 'Introdução ao JavaScript'
 })
-
 console.log('\nPessoas com a adição do course:', personsWithCourse)
 
+
 // Transformar um array em outro tipo
-const totalAge = persons.reduce((age, person) => {
+const totalAge = persons.reduce((age, person) => {// primeiro parâmetro (função)
     age += person.age
     return age
-}, 0)
+}, 0/*Segundo parâmetro (valor inical da propriedade)*/)
 
 console.log('\nSoma de idade das pessoas', totalAge)
+
+// filter, map e reduce (Não alteram a referência do objeto, retornam um novo)
 
 // Juntando operações 
 const totalEvenAges = persons
